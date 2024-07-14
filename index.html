@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./photos/logo.png" />
+    <link rel="stylesheet" href="./Css files/media.css">
+    <link rel="stylesheet" href="./Css files/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css files/main.min.css" />
+  </head>
+  <body>
+    <!-- ! loader start  -->
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+    <!-- ! loader end  -->
+
+    <!-- !sideBar Start  -->
+    <aside id="sideBar" class="vh-100 d-flex position-fixed top-0">
+      <div
+        class="sideMenu h-100 d-flex flex-column bg-dark justify-content-between py-3"
+      >
+        <ul class="sideLinks list-unstyled px-4 text-white-50">
+          <li class="searchPage text-capitalize my-4 fw-bold animate__delay-0s">
+            search
+          </li>
+          <li class="category text-capitalize my-4 fw-bold animate__delay-1s">
+            categories
+          </li>
+          <li class="area text-capitalize my-4 fw-bold animate__delay-2s">
+            area
+          </li>
+          <li class="ingred text-capitalize my-4 fw-bold animate__delay-3s">
+            ingredients
+          </li>
+          <li
+            class="contactPage text-capitalize my-4 fw-bold animate__delay-4s"
+          >
+            contact
+          </li>
+        </ul>
+        <div class="copyRight">
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-4">
+              <a href="#hhtps://www.facebook.com">
+                <i class="fa fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#hhtps://www.twitter.com">
+                <i class="fa fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#hhtps://www.youtube.com">
+                <i class="fa fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="sideEdge bg-body-secondary d-flex flex-column justify-content-between py-4 px-2"
+      >
+        <a href="#">
+          <img src="./photos/logo.png" alt="site logo" class="logo" />
+        </a>
+        <button id="edgeToggle" type="button" class="bg-transparent border-0">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark" style="display: none"></i>
+        </button>
+        <div class="edgeLinks d-flex flex-column align-items-center">
+          <a href="#" class="my-2">
+            <i class="fa fa-globe"></i>
+          </a>
+          <a href="#" class="my-2">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- !sideBar end  -->
+    <main>
+      
+      <section class="pt-5">
+        <div class="container">
+          <div class="row g-4" id="searchBox"></div>
+        </div>
+      </section>
+<!-- ! Search Section end -->
+
+<!-- ! Meal Data start  -->
+      <section class="py-5">
+        <div class="container"><div class="row g-4" id="mealData"></div></div>
+      </section>
+<!-- ! Meal Data end  -->
+
+<!-- ! Contact start  -->
+      <section class="">
+        <div id="contactBox"></div>
+      </section>
+<!-- ! Contact start  -->
+
+
+
+
+
+
+
+
+
+
+
+      <script src="./Js files/bootstrap.bundle.min.js"></script>
+      <script src="./Js files/jquery-3.7.1.min.js"></script>
+      <script src="./Js files/index.js"></script>
+    </main>
+  </body>
+</html>

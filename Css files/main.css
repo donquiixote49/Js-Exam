@@ -1,0 +1,458 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    --animate-delay: 0.1s;
+}
+
+
+body{
+    font-family: "Merienda", cursive;
+    background-color: rgb(33 37 41);
+} 
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* !loader start  */
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #d1914b;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    --c:no-repeat radial-gradient(farthest-side, #d64123 94%,#0000);
+    --b:no-repeat radial-gradient(farthest-side, #000 94%,#0000);
+    background:
+    var(--c) 11px 15px,
+    var(--b) 6px 15px,    
+    var(--c) 35px 23px,
+    var(--b) 29px 15px,    
+    var(--c) 11px 46px,
+    var(--b) 11px 34px,    
+    var(--c) 36px 0px,
+    var(--b) 50px 31px,
+    var(--c) 47px 43px,
+    var(--b) 31px 48px,    
+    #f6d353; 
+    background-size: 15px 15px,6px 6px;
+    -webkit-animation: l4 3s infinite;
+            animation: l4 3s infinite;
+  }
+  @-webkit-keyframes l4 {
+    0%     {-webkit-mask:conic-gradient(#0000 0     ,#000 0)}
+    16.67% {-webkit-mask:conic-gradient(#0000 60deg ,#000 0)}
+    33.33% {-webkit-mask:conic-gradient(#0000 120deg,#000 0)}
+    50%    {-webkit-mask:conic-gradient(#0000 180deg,#000 0)}
+    66.67% {-webkit-mask:conic-gradient(#0000 240deg,#000 0)}
+    83.33% {-webkit-mask:conic-gradient(#0000 300deg,#000 0)}
+    100%   {-webkit-mask:conic-gradient(#0000 360deg,#000 0)}
+  }
+  @keyframes l4 {
+    0%     {-webkit-mask:conic-gradient(#0000 0     ,#000 0)}
+    16.67% {-webkit-mask:conic-gradient(#0000 60deg ,#000 0)}
+    33.33% {-webkit-mask:conic-gradient(#0000 120deg,#000 0)}
+    50%    {-webkit-mask:conic-gradient(#0000 180deg,#000 0)}
+    66.67% {-webkit-mask:conic-gradient(#0000 240deg,#000 0)}
+    83.33% {-webkit-mask:conic-gradient(#0000 300deg,#000 0)}
+    100%   {-webkit-mask:conic-gradient(#0000 360deg,#000 0)}
+  }
+
+
+
+  .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgb(33 37 41);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+
+/* !loader end */
+
+
+/* ! SideBar Start  */
+
+#sideBar {
+    left: -15rem;
+    z-index: 99999;
+}
+
+.sideEdge a img {
+    width: 2.5rem;
+}
+
+
+#sideBar .sideMenu {
+    max-width: 15rem;
+}
+
+
+.sideMenu .sideLinks li {
+cursor: pointer;
+-webkit-transition: .3s;
+-o-transition: .3s;
+transition: .3s;
+
+}
+
+
+.sideMenu .sideLinks li:hover{
+    padding-left: 1rem;
+color: #fff;
+
+}
+
+.copyRight p {
+    font-size: .7rem;
+    padding: 0 10px;
+}
+
+
+.copyRight ul li a i {
+    color: rgba(255, 255, 255, .5);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    
+}
+
+.copyRight ul li a i:hover{
+color: #fff;
+scale: 1.5;
+}
+
+
+#edgeToggle {
+    font-size: 1.5rem;
+    opacity: .5;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#edgeToggle:hover{
+    opacity: 1;
+}
+
+
+.edgeLinks a i {
+    color: rgba(102, 102, 102, 0.5);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.edgeLinks a i:hover {
+
+    color: rgb(33 37 41);
+    scale: 1.5;
+}
+
+
+/* ! SideBar End  */
+
+
+
+/* ! Meal Boxes style start  */
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.card .overlay {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: top .6s ease-in-out;
+    -o-transition: top .6s ease-in-out;
+    transition: top .6s ease-in-out;
+}
+
+
+.card:hover .overlay {
+    top: 0;
+}
+
+
+
+
+/* ! Meal Boxes style end  */
+
+
+
+
+/* ! meal Details start  */
+
+
+.mealImg {
+    max-width: 25rem;
+    margin-inline: auto;
+}
+
+
+.btns button a {
+    color: inherit;
+}
+
+
+
+
+
+/* ! meal Details start  */
+
+
+
+
+
+
+/* ! Area Section  start  */
+
+.city{
+    position: relative;
+    cursor: pointer;
+    border-radius: .3rem;
+
+}
+
+
+.city::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: #fff;
+    height: 100%;
+    width: .3rem;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+border-radius: .3rem 0 0 .3rem;
+right: 0;
+-webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+        transform-origin: bottom right;
+}
+
+
+.city::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: #fff;
+    height: 100%;
+    width: .3rem;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: .3rem 0 0 .3rem;
+    left: 0;
+    -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+            transform-origin: left top;
+}
+
+
+.city:hover::before{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+}
+
+
+.city:hover::after{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+}
+
+
+
+/* ! Area Section End  */
+
+
+
+
+/* ! Ingredient start  */
+
+.ingredient{
+    position: relative;
+    cursor: pointer;
+    border-radius: .3rem;
+    height: 22rem;
+}
+
+
+
+
+.ingredient::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: #fff;
+    height: 100%;
+    width: .3rem;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+border-radius: .3rem 0 0 .3rem;
+right: 0;
+-webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+        transform-origin: bottom right;
+}
+
+
+.ingredient::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: #fff;
+    height: 100%;
+    width: .3rem;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: .3rem 0 0 .3rem;
+    left: 0;
+    -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+            transform-origin: left top;
+}
+
+.ingredient:hover::before{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+}
+
+
+.ingredient:hover::after{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+}
+
+
+
+.ingredient h2 {
+    font-size: 1.3rem;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+
+
+.ingredient p{
+    max-height: 60%;
+    padding-inline: 0.5rem;
+    overflow-y: auto;
+}
+
+
+
+/* ! Ingredient end  */
+
+
+
+
+
+/* ! search Start  */
+
+.form-floating {
+    position: relative;
+    z-index: 999;
+}
+
+
+
+
+
+
+
+/* ! search end  */
+
+
+
+/* ! Contact start  */
+
+
+#submit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #ffffff5f !important;
+}
+
+
+input::-moz-placeholder {
+    color: #ffffff5f !important;
+}
+
+
+input:-ms-input-placeholder {
+    color: #ffffff5f !important;
+}
+
+
+input::-ms-input-placeholder {
+    color: #ffffff5f !important;
+}
+
+
+input::placeholder {
+    color: #ffffff5f !important;
+}
+
+
+
+/* ! contact end  */
+
